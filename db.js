@@ -18,3 +18,16 @@ exports.people = Array.from({ length: 10 }, (_, index) => ({
   avatar: faker.image.avatar(),
   addressId: randomIntFromInterval(0, exports.addresses.length - 1),
 }))
+
+exports.albums = Array.from({ length: 10 }, (_, index) => ({
+  id: index,
+  personId: randomIntFromInterval(0, exports.people.length - 1),
+  title: faker.lorem.sentence(),
+}))
+
+exports.photos = Array.from({ length: 10 }, (_, index) => ({
+  id: index,
+  albumId: randomIntFromInterval(0, exports.albums.length - 1),
+  title: faker.lorem.sentence(),
+  url: faker.image.nature(),
+}))
