@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "server": "node server.js",
+    "client": "yarn parcel watch frontend/index.html",
+    "client-codegen": "yarn apollo client:codegen --endpoint=https://fake-graphql.tech/graphql --target=typescript --includes='frontend/*.graphql'"
   },
   "keywords": [],
   "author": "",
