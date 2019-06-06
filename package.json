@@ -10,12 +10,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo": "^2.12.5",
     "express": "^4.16.3",
-    "express-graphql": "^0.6.12",
+    "express-graphql": "^0.8.0",
     "faker": "^4.1.0",
-    "graphql": "^0.13.2"
+    "graphql": "^14.3.1",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.1"
   },
   "devDependencies": {
+    "@types/graphql": "^14.2.0",
     "prettier": "^1.14.2"
+  },
+  "resolutions": {
+    "graphql": "14.3.1"
   }
 }

@@ -25,4 +25,7 @@ app.use(
     graphiql: true,
   })
 )
+
+app.use('/', express.static('dist'))
+
 app.listen(4000)
